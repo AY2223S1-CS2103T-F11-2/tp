@@ -1,7 +1,6 @@
 package seedu.address.model.person;
 
 import static java.util.Objects.requireNonNull;
-import static seedu.address.commons.util.AppUtil.checkArgument;
 
 public class Remark {
 
@@ -25,8 +24,8 @@ public class Remark {
     @Override
     public boolean equals(Object other) {
         return other == this // short circuit if same object
-                || (other instanceof Address // instanceof handles nulls
-                && value.equals(((Address) other).value)); // state check
+                || (other instanceof Remark // instanceof handles nulls
+                && value.equals(((Remark) other).value)); // state check
     }
 
     @Override
